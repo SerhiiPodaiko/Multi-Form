@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Multi-Form/static/css/main.ebabfc4b.chunk.css",
+    "main.js": "/Multi-Form/static/js/main.4529bbe7.chunk.js",
+    "main.js.map": "/Multi-Form/static/js/main.4529bbe7.chunk.js.map",
+    "runtime-main.js": "/Multi-Form/static/js/runtime-main.47ec83b3.js",
+    "runtime-main.js.map": "/Multi-Form/static/js/runtime-main.47ec83b3.js.map",
+    "static/css/2.da1eef19.chunk.css": "/Multi-Form/static/css/2.da1eef19.chunk.css",
+    "static/js/2.c7a41d15.chunk.js": "/Multi-Form/static/js/2.c7a41d15.chunk.js",
+    "static/js/2.c7a41d15.chunk.js.map": "/Multi-Form/static/js/2.c7a41d15.chunk.js.map",
+    "index.html": "/Multi-Form/index.html",
+    "static/css/2.da1eef19.chunk.css.map": "/Multi-Form/static/css/2.da1eef19.chunk.css.map",
+    "static/css/main.ebabfc4b.chunk.css.map": "/Multi-Form/static/css/main.ebabfc4b.chunk.css.map",
+    "static/js/2.c7a41d15.chunk.js.LICENSE.txt": "/Multi-Form/static/js/2.c7a41d15.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.47ec83b3.js",
+    "static/css/2.da1eef19.chunk.css",
+    "static/js/2.c7a41d15.chunk.js",
+    "static/css/main.ebabfc4b.chunk.css",
+    "static/js/main.4529bbe7.chunk.js"
+  ]
+}
