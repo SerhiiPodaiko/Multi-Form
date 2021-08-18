@@ -25,17 +25,17 @@ class FormPersonalDetails extends Component {
                 <Container>
                     <Form>
                         <Form.Group className="mb-3">
-                            <Form.Control type="text" placeholder="Enter yor Occupation"
+                            <Form.Control type="text" placeholder="Occupation"
                                           defaultValue={values.occupation}
                                           onChange={handleChange("occupation")} />
                         </Form.Group>
                         <Form.Group className="mb-3">
-                            <Form.Control type="text" placeholder="Enter yor city"
+                            <Form.Control type="text" placeholder="City"
                                           defaultValue={values.city}
                                           onChange={handleChange("city")} />
                         </Form.Group>
                         <Form.Group className="mb-3">
-                            <Form.Control type="email" placeholder="Enter yor Bio"
+                            <Form.Control type="email" placeholder="Bio"
                                           defaultValue={values.bio}
                                           onChange={handleChange("bio")} />
                         </Form.Group>

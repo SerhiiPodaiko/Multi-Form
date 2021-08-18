@@ -15,3 +15,14 @@ Form {
     padding: 5px 30px;
     margin: 0 20px;
 }
+
+.list-group {
+    margin: 30px 0;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    color: #3189E1;
+    font-weight: 500;
+}
