@@ -3,7 +3,9 @@ import UserForm from "../UserForm";
 
 function App() {
   return (
-    <UserForm />
+   <div className="app-wrapper">
+     <UserForm />
+   </div>
   );
 }
 

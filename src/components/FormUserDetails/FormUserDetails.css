@@ -1,0 +1,17 @@
+Form {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #3189E1;
+    border-radius: 8px;
+}
+
+.wrap-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.wrap-btn button {
+    padding: 5px 30px;
+    margin: 0 20px;
+}
