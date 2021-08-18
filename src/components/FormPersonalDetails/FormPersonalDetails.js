@@ -1,17 +1,22 @@
 import {Navbar, Container, Form, Button} from "react-bootstrap";
 
 const FormPersonalDetails = (props) => {
+    const {values: { occupation, city, bio }, handleChange} = props;
+
     const next = (e) => {
         e.preventDefault();
-        props.nextStep();
+        if (occupation && city && bio) {
+            props.nextStep();
+        } else {
+            alert("Data not filled")
+        }
+
     }
 
     const back = (e) => {
         e.preventDefault();
        props.prevStep();
     }
-
-    const {values, handleChange} = props;
 
     return (
         <>
@@ -26,17 +31,17 @@ const FormPersonalDetails = (props) => {
                     <Form>
                         <Form.Group className="mb-3">
                             <Form.Control type="text" placeholder="Occupation"
-                                          defaultValue={values.occupation}
+                                          defaultValue={occupation}
                                           onChange={handleChange("occupation")}/>
                         </Form.Group>
                         <Form.Group className="mb-3">
                             <Form.Control type="text" placeholder="City"
-                                          defaultValue={values.city}
+                                          defaultValue={city}
                                           onChange={handleChange("city")}/>
                         </Form.Group>
                         <Form.Group className="mb-3">
                             <Form.Control type="email" placeholder="Bio"
-                                          defaultValue={values.bio}
+                                          defaultValue={bio}
                                           onChange={handleChange("bio")}/>
                         </Form.Group>
                         <div className='wrap-btn'>

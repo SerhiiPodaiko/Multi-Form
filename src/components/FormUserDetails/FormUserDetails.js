@@ -3,10 +3,15 @@ import "./FormUserDetails.css";
 
 const FormUserDetails = (props) => {
     const {values: { firstName, lastName, email }, handleChange} = props;
-
+    
     const next = (e) => {
         e.preventDefault();
-       props.nextStep();
+        if (firstName && lastName && email) {
+            props.nextStep();
+        } else {
+            alert("Data not filled")
+        }
+
     }
 
     return (

@@ -23,7 +23,7 @@ const Confirm = (props) => {
             </Navbar>
            <main className="main">
                <Container>
-                   <ListGroup className="list-group">
+                   <ListGroup className="list-group" style={{ margin: "30px auto" }}>
                        <ListGroup.Item variant="light" className="list-group-item">
                            <span>FirstName:</span>
                            <span>{firstName}</span>
