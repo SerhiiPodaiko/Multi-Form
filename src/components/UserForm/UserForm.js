@@ -1,9 +1,10 @@
-import React from "react";
+import React, {Component} from "react";
 import FormUserDetails from "../FormUserDetails";
 import FormPersonalDetails from "../FormPersonalDetails";
 import Confirm from "../Confirm";
+import Success from "../Success";
 
-export default class UserForm extends React.Component {
+export default class UserForm extends Component {
     state = {
         step: 1,
         firstName: '',
@@ -65,7 +66,7 @@ export default class UserForm extends React.Component {
                         values={values}/>
                 )
             case 4:
-                return <h1>Success</h1>
+                return <Success />
             default: return <FormUserDetails />
         }
     }

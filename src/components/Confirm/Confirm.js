@@ -1,67 +1,67 @@
-import React, {Component} from 'react';
-import { Navbar, Container, ListGroup, Button } from "react-bootstrap";
+import {Navbar, Container, ListGroup, Button} from "react-bootstrap";
 
-class Confirm extends Component {
-    continue = (e) => {
+const Confirm = (props) => {
+    const next = (e) => {
         e.preventDefault();
-        this.props.nextStep();
+        props.nextStep();
     }
 
-    back = (e) => {
+    const back = (e) => {
         e.preventDefault();
-        this.props.prevStep();
+        props.prevStep();
     }
 
-    render() {
-        const { values: { firstName, lastName, email, occupation, city, bio } } = this.props;
-        return (
-            <>
-                <Navbar bg="primary" variant="dark">
-                    <Container>
-                        <Navbar.Brand href="#home">Form</Navbar.Brand>
-                        <h4 className="title text-white">Enter Personal Details</h4>
-                    </Container>
-                </Navbar>
+    const {values: {firstName, lastName, email, occupation, city, bio}} = props;
+
+    return (
+        <>
+            <Navbar bg="primary" variant="dark" className="header">
                 <Container>
-                    <ListGroup className="list-group">
-                        <ListGroup.Item variant="light" className="list-group-item">
-                            <span>FirstName:</span>
-                            <span>{firstName}</span>
-                        </ListGroup.Item>
-                        <ListGroup.Item variant="light">
-                            <span>LastName:</span>
-                            <span>{lastName}</span>
-                        </ListGroup.Item>
-                        <ListGroup.Item variant="light">
-                            <span>Email:</span>
-                            <span>{email}</span>
-                        </ListGroup.Item>
-                        <ListGroup.Item variant="light">
-                            <span>Occupation:</span>
-                            <span>{occupation}</span>
-                        </ListGroup.Item>
-                        <ListGroup.Item variant="light">
-                            <span>City:</span>
-                            <span>{city}</span>
-                        </ListGroup.Item>
-                        <ListGroup.Item variant="light">
-                            <span>Bio:</span>
-                            <span>{bio}</span>
-                        </ListGroup.Item>
+                    <Navbar.Brand href="#home">Form</Navbar.Brand>
+                    <h4 className="title text-white">Confirm User Data</h4>
+                </Container>
+            </Navbar>
+           <main className="main">
+               <Container>
+                   <ListGroup className="list-group">
+                       <ListGroup.Item variant="light" className="list-group-item">
+                           <span>FirstName:</span>
+                           <span>{firstName}</span>
+                       </ListGroup.Item>
+                       <ListGroup.Item variant="light">
+                           <span>LastName:</span>
+                           <span>{lastName}</span>
+                       </ListGroup.Item>
+                       <ListGroup.Item variant="light">
+                           <span>Email:</span>
+                           <span>{email}</span>
+                       </ListGroup.Item>
+                       <ListGroup.Item variant="light">
+                           <span>Occupation:</span>
+                           <span>{occupation}</span>
+                       </ListGroup.Item>
+                       <ListGroup.Item variant="light">
+                           <span>City:</span>
+                           <span>{city}</span>
+                       </ListGroup.Item>
+                       <ListGroup.Item variant="light">
+                           <span>Bio:</span>
+                           <span>{bio}</span>
+                       </ListGroup.Item>
 
-                    </ListGroup>
+                   </ListGroup>
                    <div className="wrap-btn">
-                       <Button variant="dark" type="button" onClick={this.back}>
+                       <Button variant="dark" type="button" onClick={back}>
                            Back
                        </Button>
-                       <Button variant="primary" type="button" onClick={this.continue}>
+                       <Button variant="primary" type="button" onClick={next}>
                            Continue
                        </Button>
                    </div>
-                </Container>
-            </>
-        );
-    }
+               </Container>
+           </main>
+        </>
+    );
 }
 
 export default Confirm;
